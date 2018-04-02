@@ -1,0 +1,67 @@
+{% load bootstrap3 %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gilgamesh Project</title>
+
+	{% bootstrap_css %}
+	{% bootstrap_javascript %}
+
+	<style type="text/css">
+		.bg-5 { 
+			background-color: #2f2f2f;
+			color: #ffffff;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="{% url 'gilgamesh:index' %}">Início</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="{% url 'gilgamesh:about' %}">Sobre</a></li>
+        <li><a href="{% url 'gilgamesh:download' %}">Download</a></li>
+   <!-- <li><a href="#">Reportar Bug</a></li>   -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+   <!--    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div class="container">
+		<div class="page-header">
+			{% block header %}{% endblock header %}
+		</div>
+		<div>
+			{% block content %}{% endblock content %}
+		</div>
+		<hr>
+		<footer class="container-fluid bg-5 text-center">
+
+			<p>Um novo velho clássico está para renascer!</p>
+
+			Copyright © 2017 | brunolcarli  - <a href="http://www.rpgmakerweb.com/products/programs/rpg-maker-mv">RPG Maker Engine</a> - <a href="https://www.facebook.com/gilgamesrpg">FB <img src="{% static 'img/fbic.png' %}"></a>
+		</footer>
+	</div>
+</body>
+</html>
+
+

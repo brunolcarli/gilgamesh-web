@@ -1,0 +1,93 @@
+{% extends "gilgamesh/base.html" %}
+{% load static %}
+
+{%	block header %}
+	<style>
+		.bg-1 { 
+			background-image: url("{% static 'img/skybg.png' %}");
+		}
+		.bg-2 { 
+			background-color: #474e5d; /* Dark Blue */
+			color: #ffffff;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		.bg-3 { 
+			background-color: #ffffff; /* White */
+			color: #555555;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+		.bg-4 { 
+			background-color: #5c86c9; 
+			color: #ffffff;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+
+
+	</style>
+
+{% endblock header %}
+
+{% block content %}
+	<div class="container-fluid bg-1 text-center">
+		<h3 style="color:white;">Projeto Gilgamesh</h3>
+		<img src="{% static 'img/gilgameshface.png' %}" alt="Gilgamesh" class="img-circle">
+		<h3></h3>
+	</div>
+
+
+	<div class="container-fluid bg-2 text-center">
+		<h3>Sobre o Projeto</h3>
+		<hr>
+		<p>O <i>Projeto Gilgamesh</i> é um projeto independente sem ajuda de custos de qualquer tipo de entidade, representando a cena <i>Indie</i> este RPG basea-se em clássicos para trazer novamente o antigo ao presente momento. O projeto é desenvolvido por um único desenvolvedor e a partir da contribuição independente de recursos artísticos livres para usos comerciais e não comerciais sob licença gratuita de uso por diversos colaboradores.</p>
+		<p>Este projeto descreve acontecimentos da Epopéia de Gilgamesh, e incrementada com novas aventuras e novos personagens, como Alfr, um caçador que ajuda Gilgamesh, o rei da cidade de Uruk, em sua jornada, e Skulda, uma misteriosa Feiticeira que se diz designada a ajudar Gilgamesh em suas empreitadas. O game mistura a trama da saga com a fantasia que permeia o universo do RPG, enaltecendo o caráter old school do game.</p>
+		<hr>
+	</div>
+
+	<div class="container-fluid bg-3 text-center">
+
+		<img src="{% static 'img/gmesh.png' %}" alt="Gilgamesh" class="img-circle">
+		<img src="{% static 'img/Enkidu.png' %}" alt="Gilgamesh" class="img-circle">
+		<img src="{% static 'img/Skuld.png' %}" alt="Gilgamesh" class="img-circle">
+		<img src="{% static 'img/Alfr.png' %}" alt="Gilgamesh" class="img-circle">
+
+		<h3>Sobre o jogo...</h3><br/>
+		<hr>
+		<p><i>Gilgamesh: Um conto épico</i> é um jogo de RPG de mundo semi-aberto não-linear que permite o jogador explorar o cenário a vontade dentro dos limites da história (o que quer dizer que para entrar em determinados mapas será preciso concluir determinada parte da história). Sua mecânica é similar à clássicos da série Final Fantasy, com batalhas laterais e um enredo envolvente. O jogo apresentará cenários originais com diferentes climas, de dia ou de noite, chuva ou sol e certos tipos de inimigo que aparecem somente ema certas condições proporcionando uma diversidade de eventos ampla e abrangente</p>
+
+
+
+		<p>O jogador encontrará diversos desafios na história, como a jornada para terras distantes, busca por artefatos perdidos, explorar calabouços, batalhar com fantásticas criaturas das mais diferentes espécies e tamanhos. O progresso no jogo acontece por meio da realização dos principais eventos da história que levarão o jogador a desafios mais complicados, calabouços mais profundos e inimigos mais poderosos, exigindo maior fortalecimento dos heróis.</p>
+		<hr>
+	</div>
+
+	<div class="container-fluid bg-4 text-center">
+		<h3 style="color:white;">Sobre o Desenvolvedor</h3>
+		<img src="{% static 'img/devface.png' %}" alt="Gilgamesh" class="img-circle">
+		<p style="color:white;">Bruno Luvizotto Carli é estudante de Engenharia de Software, projeta e desenvolve o jogo de forma independente desde Março de 2017</p>
+	</div>
+
+	<div class="container-fluid bg-3 text-center"> 
+		<h3>Links</h3>
+		<hr>
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://brunolcarli.github.io/gilgamesh/">Documentação completa do Projeto Gilgamesh</a>
+				<a href="https://brunolcarli.github.io/gilgamesh/"><img src="{% static 'img/docs.png' %}" alt="gilgamesh docs"></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://github.com/brunolcarli">Outros projetos do desenvolvedor</a>
+				<a href="https://github.com/brunolcarli"><img src="{% static 'img/giticon.png' %}" alt="github/brunolcarli"></a>
+			</div>
+			<div class="col-sm-4"> 
+				<a href="https://en.wikipedia.org/wiki/Indie_game">O que é um jogo independente (<i>Indie Game</i>)?</a>
+				<a href="https://en.wikipedia.org/wiki/Indie_game"><img src="{% static 'img/wiki.png' %}" alt="Image"></a>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock content %}
