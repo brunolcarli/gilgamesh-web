@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gilgamesh',
     'bootstrap3',
-    'gunicorn',
+    
 ]
 
 MIDDLEWARE = [
