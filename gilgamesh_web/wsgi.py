@@ -28,3 +28,5 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "learning_log.settings")
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
 """
+
+

@@ -13,3 +13,5 @@ def download(request):
 	"""Pagina de downloads"""
 	return render(request, 'gilgamesh/download.html')
 
+
+
